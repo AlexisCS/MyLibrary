@@ -12,7 +12,7 @@ class TabBarViewController: UITabBarController {
     var presenter: TabBarPresenterProtocol?
     
     init() {
-        super.init(nibName: "TabBarViewController", bundle: .module)
+        super.init(nibName: nil, bundle: .module)
     }
     
     required init?(coder: NSCoder) {

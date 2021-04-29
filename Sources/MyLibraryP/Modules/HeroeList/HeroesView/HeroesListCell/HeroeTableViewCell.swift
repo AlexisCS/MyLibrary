@@ -10,7 +10,7 @@ import UIKit
 
 class HeroeTableViewCell: UITableViewCell {
     
-    static var nib = UINib(nibName: "HeroeTableViewCell", bundle: .module)
+    static var nib = UINib(nibName: String(describing: Self.self), bundle: .module)
     static let id = "HeroeTableViewCell"
 
     @IBOutlet weak var profileImage: UIImageView!

@@ -15,7 +15,7 @@ class PopularHeroeViewController: UIViewController {
     private var heroe: Heroe?
     
     init() {
-        super.init(nibName: "PopularHeroeViewController", bundle: .module)
+        super.init(nibName: String(describing: Self.self), bundle: .module)
     }
     
     required init?(coder: NSCoder) {

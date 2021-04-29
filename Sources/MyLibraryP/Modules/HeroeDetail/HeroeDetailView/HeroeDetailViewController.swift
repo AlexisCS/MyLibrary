@@ -16,7 +16,7 @@ class HeroeDetailViewController: UIViewController {
     var presenter: HeroeDetailPresenterProtocol?
     
     init() {
-        super.init(nibName: "HeroeDetailViewController", bundle: .module)
+        super.init(nibName: String(describing: Self.self), bundle: .module)
     }
     
     required init?(coder: NSCoder) {
