@@ -19,8 +19,8 @@ class HeroesListHeader: UITableViewHeaderFooterView {
     }
     
     override func awakeFromNib() {
-        super.awakeFromNib()
         initSetup()
+        super.awakeFromNib()
     }
     
     private func initSetup() {
