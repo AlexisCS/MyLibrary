@@ -37,11 +37,15 @@ class HeroesListViewController: UIViewController {
         super.init(coder: coder)
     }
     
+    override func loadView() {
+        super.loadView()
+        initSetup()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter?.viewDidLoad()
         hubSetup()
-        initSetup()
         navigationSetup()
         searchControllerSetup()
     }
