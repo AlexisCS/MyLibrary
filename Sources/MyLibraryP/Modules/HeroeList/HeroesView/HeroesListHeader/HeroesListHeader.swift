@@ -19,11 +19,10 @@ class HeroesListHeader: UITableViewHeaderFooterView {
     }
     
     override func awakeFromNib() {
-        initSetup()
         super.awakeFromNib()
     }
     
-    private func initSetup() {
+    func initSetup() {
         collectionView.register(HeroesListHeaderCollectionViewCell.nib,
                                 forCellWithReuseIdentifier: HeroesListHeaderCollectionViewCell.id)
         collectionView.isPagingEnabled = true
