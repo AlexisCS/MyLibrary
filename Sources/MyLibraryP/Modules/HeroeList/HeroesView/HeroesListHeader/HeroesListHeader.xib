@@ -56,8 +56,8 @@
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="collectionView" destination="j2F-xb-SXP" id="5ta-Jy-7Ef"/>
-                <outlet property="titleLabel" destination="id6-1a-z1d" id="Ecm-93-IIL"/>
+                <outlet property="collectionView" destination="j2F-xb-SXP" id="gG5-o9-Aq3"/>
+                <outlet property="titleLabel" destination="id6-1a-z1d" id="pEy-Vk-AmW"/>
             </connections>
             <point key="canvasLocation" x="5.7971014492753632" y="-158.03571428571428"/>
         </view>
