@@ -30,7 +30,7 @@ class HeroesListViewController: UIViewController {
     var presenter: HeoroesListPresenterProtocol?
     
     init() {
-        super.init(nibName: "HeroesListViewController", bundle: Bundle(for: Self.self))
+        super.init(nibName: "HeroesListViewController", bundle: Bundle.module)
     }
     
     required init?(coder: NSCoder) {
