@@ -128,7 +128,6 @@ extension HeroesListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: HeroesListHeader.id) as? HeroesListHeader else { return nil }
         header.titleLabel.text = "Top Tallest Heroes In Section \(section + 1)"
-        header.initSetup()
         header.collectionView.delegate = self
         header.collectionView.dataSource = self
         currentSection = section

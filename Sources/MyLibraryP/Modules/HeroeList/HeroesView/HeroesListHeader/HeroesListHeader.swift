@@ -15,11 +15,12 @@ class HeroesListHeader: UITableViewHeaderFooterView {
     
     static let id: String = "HeroesListHeaderId"
     static var nib: UINib {
-        return UINib(nibName: String(describing: Self.self), bundle: .module)
+        return UINib(nibName: "HeroesListHeader", bundle: .module)
     }
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        initSetup()
     }
     
     func initSetup() {
