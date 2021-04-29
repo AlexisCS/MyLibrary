@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeroesListHeader" customModule="ViperExample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="506" height="178"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b26-6c-aLO">
+                    <rect key="frame" x="0.0" y="0.0" width="506" height="178"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j2F-xb-SXP">
+                            <rect key="frame" x="10" y="41" width="486" height="127"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2av-O6-Hi9">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Top Tallest Heroes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="id6-1a-z1d">
+                            <rect key="frame" x="10" y="10" width="486" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="j2F-xb-SXP" firstAttribute="leading" secondItem="b26-6c-aLO" secondAttribute="leading" constant="10" id="6SH-kq-bT4"/>
+                        <constraint firstAttribute="bottom" secondItem="j2F-xb-SXP" secondAttribute="bottom" constant="10" id="FOQ-BV-5ex"/>
+                        <constraint firstItem="id6-1a-z1d" firstAttribute="top" secondItem="b26-6c-aLO" secondAttribute="top" constant="10" id="IDO-21-hLY"/>
+                        <constraint firstAttribute="trailing" secondItem="id6-1a-z1d" secondAttribute="trailing" constant="10" id="QFU-oH-Vya"/>
+                        <constraint firstItem="id6-1a-z1d" firstAttribute="leading" secondItem="b26-6c-aLO" secondAttribute="leading" constant="10" id="gDS-k2-niB"/>
+                        <constraint firstAttribute="trailing" secondItem="j2F-xb-SXP" secondAttribute="trailing" constant="10" id="vpe-6B-m68"/>
+                        <constraint firstItem="j2F-xb-SXP" firstAttribute="top" secondItem="id6-1a-z1d" secondAttribute="bottom" constant="10" id="yzR-FQ-GZM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="b26-6c-aLO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7b0-lk-Jc3"/>
+                <constraint firstItem="b26-6c-aLO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="FKs-95-g0F"/>
+                <constraint firstAttribute="trailing" secondItem="b26-6c-aLO" secondAttribute="trailing" id="S4n-AQ-lxp"/>
+                <constraint firstAttribute="bottom" secondItem="b26-6c-aLO" secondAttribute="bottom" id="SDj-Cl-q96"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="collectionView" destination="j2F-xb-SXP" id="5ta-Jy-7Ef"/>
+                <outlet property="titleLabel" destination="id6-1a-z1d" id="Ecm-93-IIL"/>
+            </connections>
+            <point key="canvasLocation" x="5.7971014492753632" y="-158.03571428571428"/>
+        </view>
+    </objects>
+</document>
