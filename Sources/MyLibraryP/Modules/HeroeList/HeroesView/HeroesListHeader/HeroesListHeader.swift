@@ -15,7 +15,7 @@ class HeroesListHeader: UITableViewHeaderFooterView {
     
     static let id: String = "HeroesListHeaderId"
     static var nib: UINib {
-        return UINib(nibName: "HeroesListHeader", bundle: Bundle.module)
+        return UINib(nibName: "HeroesListHeader", bundle: .module)
     }
     
     override func awakeFromNib() {

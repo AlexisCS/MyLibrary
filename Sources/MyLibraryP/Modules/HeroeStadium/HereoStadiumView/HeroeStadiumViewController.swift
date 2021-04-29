@@ -11,7 +11,7 @@ import UIKit
 class HeroeStadiumViewController: UIViewController {
     
     init() {
-        super.init(nibName: "HeroeStadiumViewController", bundle: Bundle.module)
+        super.init(nibName: "HeroeStadiumViewController", bundle: .module)
     }
     
     required init?(coder: NSCoder) {

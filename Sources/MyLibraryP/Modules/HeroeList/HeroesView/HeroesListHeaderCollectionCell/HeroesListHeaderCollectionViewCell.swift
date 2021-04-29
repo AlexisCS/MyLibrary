@@ -14,7 +14,7 @@ class HeroesListHeaderCollectionViewCell: UICollectionViewCell {
     
     static let id: String = "HeroesListHeaderCollectionViewCellId"
     static var nib: UINib {
-        return UINib(nibName: "HeroesListHeaderCollectionViewCell", bundle: Bundle(for: Self.self))
+        return UINib(nibName: "HeroesListHeaderCollectionViewCell", bundle: .module)
     }
     
     override func awakeFromNib() {
